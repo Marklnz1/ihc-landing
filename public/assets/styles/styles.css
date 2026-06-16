@@ -83,3 +83,185 @@ img {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+/* === Buttons === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--r);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--filled {
+  background: linear-gradient(135deg, #1e6091, #2a6f97);
+  color: var(--c-white);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--c-primary);
+  border: 1.5px solid var(--c-primary);
+}
+
+.btn--lg {
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn--full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* === Navbar === */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.nav__logo {
+  height: 4rem;
+  width: 4rem;
+  object-fit: contain;
+  background: var(--c-white);
+  padding: 0.3rem;
+  border-radius: var(--r);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
+.nav__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--c-gray);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.nav__link:hover {
+  color: var(--c-dark);
+  background: var(--c-light);
+}
+
+.nav__check,
+.nav__hamburger {
+  display: none;
+}
+
+/* === Badge === */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.9rem;
+  background: var(--c-light);
+  color: var(--c-primary);
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge__icon {
+  font-size: 1.1rem;
+}
+
+/* === Hero === */
+.hero {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(135deg, #f0f4f8, #f8fafc 50%, #eef3f7);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: rgba(30, 96, 145, 0.12);
+  filter: blur(120px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero__desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--c-gray);
+  max-width: 30rem;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: var(--r);
+  box-shadow: 0 16px 40px rgba(30, 96, 145, 0.14);
+  border: 3px solid var(--c-white);
+  justify-self: center;
+}
