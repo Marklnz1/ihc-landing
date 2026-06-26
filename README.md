@@ -47,17 +47,16 @@ El proyecto está organizado de la siguiente manera:
 ```text
  Landing IHC/
  ├── README.md                  # Archivo de información del proyecto (este archivo)
- └── public/                    # Carpeta principal del proyecto web
-     ├── index.html             # Landing Page principal de LexiPic
-     ├── favicon.ico            # Ícono del sitio web
-     └── assets/                # Carpeta para archivos de recursos
-         ├── styles/            # Estilos CSS
-         │   └── styles.css     # Archivo CSS del diseño
-         ├── scripts/           # Archivos JavaScript
-         │   ├── main.js        # Script de interacciones básicas
-         └── images/            # Imágenes del proyecto
-             ├── logo.png       # Logo oficial de LexiPic
-             └── [imágenes]     # Capturas, mockups y avatares del equipo
+ ├── index.html                 # Landing Page principal de LexiPic
+ ├── favicon.ico                # Ícono del sitio web
+ └── assets/                    # Carpeta para archivos de recursos
+     ├── styles/                # Estilos CSS
+     │   └── styles.css         # Archivo CSS del diseño
+     ├── scripts/               # Archivos JavaScript
+     │   └── main.js            # Script de interacciones básicas (vinculado en index.html)
+     └── images/                # Imágenes del proyecto
+         ├── logo.png           # Logo oficial de LexiPic
+         └── [imágenes]         # Capturas, mockups y avatares del equipo
 ```
 
 ---
