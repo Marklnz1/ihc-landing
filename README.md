@@ -59,3 +59,15 @@ El proyecto está organizado de la siguiente manera:
              ├── logo.png       # Logo oficial de LexiPic
              └── [imágenes]     # Capturas, mockups y avatares del equipo
 ```
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5**: Estructura de marcado semántica y accesible para lectores de pantalla.
+- **CSS3 (Vanilla)**: Diseño adaptable y animaciones sin necesidad de frameworks CSS externos.
+- **JavaScript (Vanilla)**: Implementación del menú responsive y la integración de síntesis de voz (Text-to-Speech).
+- **Google Fonts & Material Icons**: Tipografía e íconos interactivos premium.
+
+---
+*Última actualización: Junio de 2026 por el equipo de LexiPic.*

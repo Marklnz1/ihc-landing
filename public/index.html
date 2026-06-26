@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LexiPic - Tu traductor visual en tiempo real</title>
+  <meta name="description"
+    content="Aplicación móvil para personas con afasia o daño cerebral adquirido. Convierte textos complejos en pictogramas interactivos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand" aria-label="LexiPic - Ir al inicio">
+        <img src="assets/images/logo.png" alt="LexiPic Logo" class="nav__logo" width="64" height="64">
+      </a>
+      <input type="checkbox" id="menuToggle" class="nav__check" aria-hidden="true">
+      <label for="menuToggle" class="nav__hamburger" aria-label="Abrir menú de navegación" role="button">&#9776;</label>
+      <nav class="nav__menu" aria-label="Navegación principal">
+        <a href="#caracteristicas" class="nav__link">Funcionalidades</a>
+        <a href="#audiencias" class="nav__link">Pacientes y Cuidadores</a>
+        <a href="#precios" class="nav__link">Precios</a>
+        <button type="button" class="btn btn--outline" aria-label="Iniciar sesión en LexiPic">Iniciar Sesión</button>
+        <button type="button" class="btn btn--filled" aria-label="Registrarse en LexiPic">Regístrate</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="badge">
+            <span class="material-symbols-outlined badge__icon" aria-hidden="true">psychology</span>
+            Accesibilidad Cognitiva
+          </span>
+          <h1 id="hero-title" class="hero__title">LexiPic: Tu «traductor<br>visual» en tiempo real</h1>
+          <p class="hero__desc">Una aplicación móvil diseñada para ayudar a personas con afasia o daño cerebral
+            adquirido, convirtiendo textos complejos en secuencias de pictogramas interactivos apoyadas por texto
+            simplificado y audio.</p>
+          <div class="hero__actions">
+            <a href="#audiencias" class="btn btn--filled btn--lg">
+              Soy un Gestor de Cuidado
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </a>
+            <a href="#audiencias" class="btn btn--outline btn--lg">Soy un Paciente</a>
+          </div>
+        </div>
+        <img src="assets/images/hero_lexipic_translation.png"
+          alt="Captura de pantalla de LexiPic mostrando la traducción de texto a pictogramas en tiempo real"
+          class="hero__img" width="550" height="380" loading="eager">
+      </div>
+    </section>
+
+    <!-- ==================== FUNCIONALIDADES ==================== -->
+    <section class="features" id="caracteristicas" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header section-header--light">
+          <h2 id="features-title">Herramientas para la autonomía y el cuidado</h2>
+          <p>Superando los «muros de texto» que merman la autonomía</p>
+        </header>
+        <div class="grid grid--4" role="list">
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span class="material-symbols-outlined">translate</span></span>
+              <h3>Traductor Visual</h3>
+            </div>
+            <p>Convierte textos en secuencias de pictogramas interactivas.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span
+                  class="material-symbols-outlined">volume_up</span></span>
+              <h3>Refuerzo Auditivo</h3>
+            </div>
+            <p>Lectura en voz alta mediante botones de Text-to-Speech en cada tarjeta.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span
+                  class="material-symbols-outlined">psychology</span></span>
+              <h3>Asistencia de IA</h3>
+            </div>
+            <p>Creación de material de comunicación asistido por Inteligencia Artificial.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span class="material-symbols-outlined">feedback</span></span>
+              <h3>Feedback Activo</h3>
+            </div>
+            <p>Botones para que el paciente reporte su nivel de comprensión.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span
+                  class="material-symbols-outlined">contact_emergency</span></span>
+              <h3>Tarjeta de Emergencia</h3>
+            </div>
+            <p>Herramienta para mostrar a extraños en momentos de bloqueo de habla.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span
+                  class="material-symbols-outlined">monitoring</span></span>
+              <h3>Dashboard Clínico</h3>
+            </div>
+            <p>Monitoreo del progreso de los pacientes con indicadores de rendimiento e historial.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span class="material-symbols-outlined">sync</span></span>
+              <h3>Vinculación Sencilla</h3>
+            </div>
+            <p>Sincronización de dispositivos mediante escaneo de código QR o PIN alfanumérico.</p>
+          </article>
+          <article class="card" role="listitem">
+            <div class="card__head">
+              <span class="icon-box" aria-hidden="true"><span class="material-symbols-outlined">bookmark</span></span>
+              <h3>Tarjetas Guardadas</h3>
+            </div>
+            <p>Repositorio de conceptos frecuentes accesibles rápidamente sin usar la cámara.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== AUDIENCIAS ==================== -->
+    <section class="audiences" id="audiencias" aria-labelledby="audiences-title">
+      <h2 id="audiences-title" class="sr-only">Pacientes y Gestores de Cuidado</h2>
+      <div class="container audiences__grid">
+        <article class="audience-card audience-card--primary">
+          <div class="card__head">
+            <span class="icon-box" aria-hidden="true"><span
+                class="material-symbols-outlined">accessibility_new</span></span>
+            <h3>Para Pacientes</h3>
+          </div>
+          <p>Buscan recuperar su independencia para realizar tareas diarias. Utilizan la app para escanear su entorno y
+            obtener información digerida.</p>
+          <ul class="check-list" aria-label="Beneficios para pacientes">
+            <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Interfaz
+              minimalista</li>
+            <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Libre de
+              distracciones</li>
+          </ul>
+        </article>
+        <article class="audience-card">
+          <div class="card__head">
+            <span class="icon-box" aria-hidden="true"><span class="material-symbols-outlined">healing</span></span>
+            <h3>Para Gestores de Cuidado</h3>
+          </div>
+          <p>Buscan reducir su carga de asistencia directa y monitorear el progreso del paciente de forma clínica.</p>
+          <ul class="check-list" aria-label="Beneficios para gestores de cuidado">
+            <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Crear
+              tarjetas personalizadas con Inteligencia Artificial</li>
+            <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Revisar el
+              historial de comprensión</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== PRECIOS ==================== -->
+    <section class="pricing" id="precios" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="pricing-title">Planes de Suscripción</h2>
+          <p>Potencia la comunicación de tu paciente con opciones simples y claras.</p>
+        </header>
+        <div class="grid grid--3" role="list">
+          <article class="price-card" role="listitem">
+            <div class="price-card__body">
+              <h3>Plan Freemium</h3>
+              <p class="price-card__sub">Uso esencial para pacientes.</p>
+              <p class="price-card__amount" aria-label="Precio: 0 dólares por mes">$0<span>/mes</span></p>
+              <ul class="check-list" aria-label="Características del Plan Freemium">
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Traductor
+                  visual en tiempo real</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Lectura
+                  en voz alta (Text-to-Speech)</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Tarjeta
+                  de emergencia («Explicar»)</li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn--outline btn--full">Comenzar Gratis</button>
+          </article>
+          <article class="price-card price-card--featured" role="listitem">
+            <span class="price-card__badge" aria-label="Plan recomendado">RECOMENDADO</span>
+            <div class="price-card__body">
+              <h3>Pro</h3>
+              <p class="price-card__sub">Para terapeutas y familiares.</p>
+              <p class="price-card__amount" aria-label="Precio: 15 dólares por mes">$15<span>/mes</span></p>
+              <ul class="check-list" aria-label="Características del Plan Pro">
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Dashboard
+                  clínico del paciente</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Historial
+                  y métricas de comprensión</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Creación
+                  de tarjetas apoyadas por IA</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span>
+                  Notificaciones de actividad y alertas</li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn--filled btn--full">Comenzar Prueba Pro</button>
+          </article>
+          <article class="price-card" role="listitem">
+            <div class="price-card__body">
+              <h3>Institucional</h3>
+              <p class="price-card__sub">Para centros de rehabilitación.</p>
+              <p class="price-card__amount price-card__amount--text" aria-label="Precio personalizado">Personalizado</p>
+              <ul class="check-list" aria-label="Características del Plan Institucional">
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Todo lo
+                  del plan Pro</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Múltiples
+                  perfiles de terapeutas</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Gestión
+                  de pacientes ilimitada</li>
+                <li><span class="material-symbols-outlined check-icon" aria-hidden="true">check_circle</span> Soporte
+                  técnico prioritario</li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn--outline btn--full">Diseñar Plan a Medida</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="LexiPic Logo" class="footer__logo" width="56" height="56">
+          <p>Tu «traductor visual» en tiempo real. Accesibilidad cognitiva para devolver la autonomía a personas con
+            afasia y daño cerebral adquirido.</p>
+        </div>
+        <nav class="footer__col" aria-label="Enlaces del producto">
+          <h4>Producto</h4>
+          <a href="#caracteristicas">Funcionalidades</a>
+          <a href="#audiencias">Pacientes y Cuidadores</a>
+          <a href="#precios">Precios</a>
+        </nav>
+        <nav class="footer__col" aria-label="Enlaces legales y soporte">
+          <h4>Legal &amp; Soporte</h4>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Servicio</a>
+          <a href="#">Centro de Ayuda</a>
+          <a href="#">Tutoriales de Uso</a>
+        </nav>
+      </div>
+      <p class="footer__copy"><small>© 2026 LexiPic Inc. Todos los derechos reservados.</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
